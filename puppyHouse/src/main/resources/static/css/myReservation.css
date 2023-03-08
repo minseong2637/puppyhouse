@@ -1,0 +1,113 @@
+
+/*나의 예약 내역 영역*/
+
+#calendar_section {
+  margin: 0 auto;
+  max-width: 820px;
+  padding: 0 1.4rem;
+}
+
+.calendar_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+/* 캘린더 좌우 버튼 */
+.btn-prevDay, .btn-nextDay {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+}
+ 
+.btn-prevDay {
+  transform: rotate(-135deg);
+}
+ 
+.btn-nextDay {
+  transform: rotate(45deg);
+}
+/*캘린더 좌우 버튼 끝*/
+
+#calendar_dateHead {
+  margin: .4rem 0;
+}
+
+#calendar_dateHead div {
+  background: #17a2b8;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  width: 75pxs;
+}
+
+#calendar_dateHead, #calendar_dateBoard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+#calendar_dateHead div, #calendar_dateBoard button {
+  padding: .6rem;
+  font-size: .9rem;
+}
+
+#calendar_dateBoard button {
+  color: #222;
+  font-weight: bold;
+  min-height: 5rem;
+  padding: .6rem .8rem;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  align-items: flex-start;
+}
+#calendar_dateBoard button:hover {
+  border: 1px solid #eee;
+}
+#calendar_dateBoard button:active {
+  border: 1px solid #eee;
+  background-color: #eee;
+}
+#calendar_dateBoard button:focus {
+  border: 1px solid #eee;
+  background-color: #eee;
+}
+
+@media (min-width: 1200px) {
+  #calendar_dateHead button {
+    width: 93px;
+  }
+  #calendar_dateBoard button {
+    width: 93px;
+  }
+}
+
+@media (max-width: 768px) {
+  #calendar_dateHead button {
+    width: 65px;
+  }
+  #calendar_dateBoard button {
+    width: 65px;
+  }
+}
+@media (max-width: 576px) {
+  #calendar_dateHead button {
+    width: 60px;
+  }
+  #calendar_dateBoard button {
+    width: 60px;
+  }
+}
+
+.noColor {
+  background: #eee;
+  cursor: unset;
+}
+
+
+/*나의 예약 내역 영역 끝*/
